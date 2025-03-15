@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoSphere - Futuristic Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="video-background" autoplay muted loop>
+        <source src="1.mp4" type="video/mp4"> <!-- Updated video name to 1.mp4 -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay to darken the video -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>ChronoSphere</h1>
+        <div class="date-picker">
+            <input type="date" id="dateInput" min="2023-01-01">
+            <button id="startTimer">Start Countdown</button>
+        </div>
+        <div class="current-time">
+            <p id="currentTime"></p>
+        </div>
+        <div class="countdown">
+            <div class="time-unit" id="years">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Years</span> <!-- Label added -->
+            </div>
+            <div class="time-unit" id="months">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Months</span> <!-- Label added -->
+            </div>
+            <div class="time-unit" id="weeks">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Weeks</span> <!-- Label added -->
+            </div>
+            <div class="time-unit" id="days">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Days</span> <!-- Label added -->
+            </div>
+            <div class="time-unit" id="hours">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Hours</span> <!-- Label added -->
+            </div>
+            <div class="time-unit" id="minutes">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Minutes</span> <!-- Label added -->
+            </div>
+            <div class="time-unit" id="seconds">
+                <div class="strip"></div>
+                <div class="divisions"></div>
+                <div class="number">0</div>
+                <span class="label">Seconds</span> <!-- Label added -->
+            </div>
+        </div>
+        <div class="message" id="message">
+            <p id="messageText"></p>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+    <audio id="chime" src="1.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
